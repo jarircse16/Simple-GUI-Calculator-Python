@@ -15,6 +15,8 @@ def append(char):
   # Append a character to the entry widget
   global entry
   entry.insert(tk.END, char)
+  if char == "=":
+    evaluate()
 
 def evaluate():
   # Evaluate the expression in the entry widget
