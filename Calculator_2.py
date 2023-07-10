@@ -51,5 +51,8 @@ for i in range(len(buttons)):
 clear_button = tk.Button(window, text="Clear", width=22, command=clear)
 clear_button.grid(row=6, column=0, columnspan=4)
 
+# Make the window resizable
+window.resizable(True, True)
+
 # Start the main loop of the window
 window.mainloop()
